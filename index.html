@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OUR RAJSHAHI - Explore Rajshahi</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    </head>
+<body>
+    <div class="preloader">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="Loading OUR RAJSHAHI">
+    </div>
+
+    <div class="hero">
+        <div id="particles-js"></div>
+        <h1>
+            <span id="hero-heading-text"></span><span class="typing-cursor"></span>
+        </h1>
+        <p>Your ultimate guide to discovering services, attractions, and community life in the heart of Rajshahi.</p>
+        <a href="#container" class="cta-button button-base button-secondary">Explore Rajshahi</a>
+    </div>
+
+    <header>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="OUR RAJSHAHI Logo">
+        <h1>OUR RAJSHAHI</h1>
+        <div class="search-bar">
+            <input type="text" id="header-search-input" placeholder="Search Rajshahi..." aria-label="Search Rajshahi">
+            <button type="button" aria-label="Perform Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="button-base button-secondary" data-tooltip="Login to your account">Login</a>
+            <a href="signup.html" class="button-base button-secondary" data-tooltip="Create a new account">Signup</a>
+        </div>
+        <div class="profile-icon button-base button-secondary" onclick="toggleProfileDropdown()" data-tooltip="Account Options" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span id="username-display"></span> <div class="profile-dropdown">
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <div class="nav-menu">
+            <a href="#hero" data-tooltip="Go to Home" class="home-link active">Home</a>
+            <a href="#emergency" data-tooltip="Emergency Contacts">Emergency</a>
+            <a href="#government" data-tooltip="Government Services">Govt Offices</a>
+            <a href="#transport" data-tooltip="Transportation Info">Transport</a>
+            <a href="#business" data-tooltip="Local Shops & Markets">Businesses</a>
+            <a href="#tourist" data-tooltip="Places to Visit">Attractions</a>
+            <a href="#education" data-tooltip="Schools & Colleges">Education</a>
+            <a href="#community" data-tooltip="Local Events">Community</a>
+            <a href="#about" data-tooltip="About This Site">About Us</a>
+            <a href="contact.html" data-tooltip="Contact Us">Contact Us</a> 
+        </div>
+    </nav>
+
+    <div class="ad-bar-container">
+        </div>
+    <section class="carousel" aria-label="Featured Sections Carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="https://www.sriramakrishnahospital.com/wp-content/uploads/2022/05/Importance-of-first-aid.png" alt="First Aid Demonstration" onerror="this.onerror=null; this.src='https://placehold.co/1320x450/cccccc/ffffff?text=Image+Not+Found';">
+                <div class="carousel-item-content">
+                    <h3>Critical Emergency Services</h3>
+                    <p>Quick access to hospitals, police, fire stations, and important helplines in Rajshahi.</p>
+                    <a href="emergency.html" class="explore-button-carousel button-base button-accent">Find Help</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                 <img src="https://th.bing.com/th/id/R.06a00139349cb24c8d111978e9e5f027?rik=VBvDldpAb1B4MQ&pid=ImgRaw&r=0" alt="Beautiful Scenery in Rajshahi" onerror="this.onerror=null; this.src='https://placehold.co/1320x450/cccccc/ffffff?text=Image+Not+Found';">
+                 <div class="carousel-item-content">
+                     <h3>Explore Rajshahi's Beauty</h3>
+                     <p>Discover historical landmarks, serene parks, and the natural charm of the region.</p>
+                     <a href="tourist.html" class="explore-button-carousel button-base button-accent">Start Exploring</a>
+                 </div>
+            </div>
+            <div class="carousel-item">
+                 <img src="https://editorial01.shutterstock.com/preview-440/13605081e/788f8fd6/Shutterstock_13605081e.jpg" alt="Community Gathering or Festival" onerror="this.onerror=null; this.src='https://placehold.co/1320x450/cccccc/ffffff?text=Image+Not+Found';">
+                 <div class="carousel-item-content">
+                     <h3>Vibrant Community Life</h3>
+                     <p>Stay updated on local festivals, gatherings, and events happening around Rajshahi.</p>
+                     <a href="community.html" class="explore-button-carousel button-base button-accent">Join In</a>
+                 </div>
+            </div>
+        </div>
+        <button class="carousel-prev" onclick="moveCarousel(-1)" aria-label="Previous Slide">❮</button>
+        <button class="carousel-next" onclick="moveCarousel(1)" aria-label="Next Slide">❯</button>
+        <div class="carousel-dots" role="tablist" aria-label="Carousel Navigation Dots">
+            <button class="carousel-dot active" onclick="goToSlide(0)" aria-label="Go to slide 1" role="tab" aria-selected="true"></button>
+            <button class="carousel-dot" onclick="goToSlide(1)" aria-label="Go to slide 2" role="tab" aria-selected="false"></button>
+            <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Go to slide 3" role="tab" aria-selected="false"></button>
+        </div>
+    </section>
+
+    <main class="container" id="container">
+        <section id="emergency" class="section" style="--index: 1;" aria-labelledby="emergency-heading">
+             <div class="section-image-wrapper">
+                <img src="https://fireservice.gov.bd/sites/default/files/files/fireservice.portal.gov.bd/home_slider/420c4e40_dc59_4e38_a26f_e91a95be57fd/2024-12-17-11-58-89e7430d556c1cefecd7410c21660643.jpg" alt="Bangladesh Fire Service Vehicle" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="emergency-heading">Emergency Services</h2>
+                <p>Find crucial contacts for hospitals, police, fire stations. National Emergency Helpline: 999.</p>
+                <a href="emergency.html" class="explore-button button-base button-primary">View Contacts</a>
+             </div>
+        </section>
+        <section id="government" class="section" style="--index: 2;" aria-labelledby="government-heading">
+             <div class="section-image-wrapper">
+                 <img src="https://th.bing.com/th/id/OIP.R6CyuViEjUEAnddCQI-ZrgHaE7?rs=1&pid=ImgDetMain" alt="Government Office Building Exterior" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="government-heading">Government Offices</h2>
+                <p>Locate municipal services, passport offices, tax centers, and other essential public offices.</p>
+                <a href="government.html" class="explore-button button-base button-primary">Find Offices</a>
+             </div>
+        </section>
+        <section id="transport" class="section" style="--index: 3;" aria-labelledby="transport-heading">
+             <div class="section-image-wrapper">
+                 <img src="https://www.banglanews24.com/english/public/uploads/2022/12/03/1670076157.1670066028.2.jpg" alt="Rajshahi City Bus" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="transport-heading">Transport & Navigation</h2>
+                <p>Information on bus routes, train schedules, airport details, and local transportation options.</p>
+                <a href="transport.html" class="explore-button button-base button-primary">Get Around</a>
+             </div>
+        </section>
+        <section id="business" class="section" style="--index: 4;" aria-labelledby="business-heading">
+             <div class="section-image-wrapper">
+                 <img src="https://tds-images.thedailystar.net/sites/default/files/styles/big_202/public/feature/images/2021/04/06/rda_market_web.jpg" alt="RDA Market Rajshahi" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="business-heading">Local Businesses & Shops</h2>
+                <p>Explore Rajshahi's markets, supermarkets, shopping centers, and various local stores.</p>
+                <a href="business.html" class="explore-button button-base button-primary">Discover Shops</a>
+             </div>
+        </section>
+        <section id="tourist" class="section" style="--index: 5;" aria-labelledby="tourist-heading">
+             <div class="section-image-wrapper">
+                 <img src="https://media-cdn.tripadvisor.com/media/photo-c/2560x500/09/6e/29/e4/ruins-of-the-buddhist.jpg" alt="Paharpur Buddhist Vihara Ruins" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="tourist-heading">Tourist Attractions</h2>
+                <p>Discover historical sites, beautiful parks, museums, hotels, and other points of interest.</p>
+                <a href="tourist.html" class="explore-button button-base button-primary">Visit Places</a>
+             </div>
+        </section>
+        <section id="education" class="section" style="--index: 6;" aria-labelledby="education-heading">
+            <div class="section-image-wrapper">
+                 <img src="https://i.ytimg.com/vi/cA3nxhANfp0/maxresdefault.jpg" alt="Education Center Image" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+            </div>
+            <div class="section-content">
+               <h2 id="education-heading">Education Centers</h2>
+               <p>Find information about schools, renowned colleges, universities, and public libraries in Rajshahi.</p>
+               <a href="education.html" class="explore-button button-base button-primary">Learn More</a>
+            </div>
+       </section>
+       <section id="community" class="section" style="--index: 7;" aria-labelledby="community-heading">
+             <div class="section-image-wrapper">
+                 <img src="https://safinapark.com/wp-content/uploads/2024/01/event-2.jpg" alt="Outdoor Community Event" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="community-heading">Community & Events</h2>
+                <p>Stay informed about local festivals, cultural programs, public meetings, and social gatherings.</p>
+                <a href="community.html" class="explore-button button-base button-primary">See Events</a>
+             </div>
+        </section>
+        <section id="about" class="section" style="--index: 8;" aria-labelledby="about-heading">
+            <div class="section-image-wrapper">
+                 <img src="https://www.bproperty.com/blog/wp-content/uploads/Rajshahi-Feature-Image-1-1170x508.jpg" alt="Rajshahi City View" loading="lazy" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/ffffff?text=Image+Not+Found';">
+             </div>
+             <div class="section-content">
+                <h2 id="about-heading">About OUR RAJSHAHI</h2>
+                <p>Your comprehensive information hub for Rajshahi, connecting residents and visitors with vital services, attractions, and community happenings.</p>
+                <a href="about.html" class="explore-button button-base button-primary">Read More</a>
+             </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-section previous-reviews" aria-labelledby="previous-reviews-heading">
+            <h3 id="previous-reviews-heading">Visitor Feedback</h3>
+            <div id="reviews-list">
+                <p id="reviews-loading">Loading reviews...</p>
+            </div>
+        </section>
+        <section class="footer-section review" aria-labelledby="review-heading">
+            <h3 id="review-heading">Help Us Improve!</h3>
+            <form class="review-form" onsubmit="event.preventDefault(); submitReview();">
+                 <p>Share your experience or suggestions to help make OUR RAJSHAHI even better.</p>
+                 <div class="star-rating" data-tooltip="Rate your overall experience" role="radiogroup" aria-labelledby="rating-label">
+                     <span id="rating-label" class="sr-only">Rate your experience:</span>
+                     <i class="fas fa-star" data-value="1" role="radio" aria-checked="false" aria-label="Rate 1 star" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="2" role="radio" aria-checked="false" aria-label="Rate 2 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="3" role="radio" aria-checked="false" aria-label="Rate 3 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="4" role="radio" aria-checked="false" aria-label="Rate 4 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="5" role="radio" aria-checked="false" aria-label="Rate 5 stars" tabindex="0"></i>
+                 </div>
+                 <label for="review-email" class="sr-only">Your Email Address (Required)</label>
+                 <input type="email" id="review-email" placeholder="Your email address" required>
+                 <label for="review-text" class="sr-only">Your Feedback (Required)</label>
+                 <textarea id="review-text" placeholder="Your feedback matters..." required></textarea>
+                 <label for="review-image" class="sr-only">Attach Image (Optional)</label>
+                 <input type="file" id="review-image" accept="image/jpeg,image/png,image/gif" onchange="previewImage(event)" style="display:none;">
+                 <button type="button" class="custom-file-button button-base" style="background-color: rgba(255,255,255,0.2); color: #e2e8f0; margin-bottom: 1.2rem;" onclick="document.getElementById('review-image').click()">
+                     <i class="fas fa-paperclip"></i> Attach Image
+                 </button>
+                 <img id="image-preview" alt="Image Preview" style="display: none;">
+                 <button type="submit" class="button-base button-secondary" aria-label="Submit Your Feedback">Submit Feedback</button>
+                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                 <p class="note">Login and a valid email are required to submit feedback. Image is optional (Max 5MB JPG, PNG, GIF). View feedback below.</p>
+            </form>
+        </section>
+
+        <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+            <h3 id="newsletter-heading">Stay Updated</h3>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); subscribeNewsletter();">
+                <p>Subscribe to get the latest news, events, and updates from Rajshahi directly to your inbox.</p>
+                <label for="newsletter-email" class="sr-only">Your Email Address</label>
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit" class="button-base button-secondary" aria-label="Subscribe to Newsletter">Subscribe</button>
+            </form>
+        </section>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

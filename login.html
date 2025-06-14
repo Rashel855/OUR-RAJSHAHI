@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login - OUR RAJSHAHI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="auth-page-background">
+    <div class="auth-container">
+        <div class="auth-content">
+            <a href="index.html" class="close-auth" aria-label="Back to Home">×</a>
+            <h2 id="login-heading">Login</h2>
+            <form onsubmit="event.preventDefault(); login();">
+                <div class="form-group">
+                    <input type="email" id="login-email" placeholder=" " required>
+                    <label for="login-email">Email Address</label>
+                    <i class="fas fa-envelope"></i>
+                    </div>
+                <div class="form-group">
+                    <input type="password" id="login-password" placeholder=" " required>
+                    <label for="login-password">Password</label>
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="form-group remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <button type="submit" class="button-base button-primary">Login Now</button>
+                <div class="social-login">
+                    <p>Or login with:</p>
+                    <button type="button" class="button-social google" onclick="alert('Google login not implemented yet!');">Google</button>
+                    <button type="button" class="button-social facebook" onclick="alert('Facebook login not implemented yet!');"> Facebook</button>
+                </div>
+                <div class="auth-links">
+                    <a href="signup.html">Need an account? Signup</a>
+                    <a href="forgot-password.html">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

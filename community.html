@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Community & Events - OUR RAJSHAHI</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="Loading OUR RAJSHAHI">
+    </div>
+
+    <header>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="OUR RAJSHAHI Logo">
+        <h1>OUR RAJSHAHI</h1>
+        <div class="search-bar">
+            <input type="text" id="header-search-input" placeholder="Search Rajshahi..." aria-label="Search Rajshahi">
+            <button type="button" aria-label="Perform Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="button-base button-secondary" data-tooltip="Login to your account">Login</a>
+            <a href="signup.html" class="button-base button-secondary" data-tooltip="Create a new account">Signup</a>
+        </div>
+        <div class="profile-icon button-base button-secondary" onclick="toggleProfileDropdown()" data-tooltip="Account Options" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span id="username-display"></span> <div class="profile-dropdown">
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <div class="nav-menu">
+            <a href="index.html#hero" data-tooltip="Go to Home" class="home-link">Home</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="government.html">Govt Offices</a>
+            <a href="transport.html">Transport</a>
+            <a href="business.html">Businesses</a>
+            <a href="tourist.html">Attractions</a>
+            <a href="education.html">Education</a>
+            <a href="community.html">Community</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" data-tooltip="Contact Us">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="container community-page-content">
+        <section id="community-intro" class="section-full-width">
+            <h2>Community Life & Events in Rajshahi</h2>
+            <p>Stay informed about the vibrant cultural programs, local festivals, public meetings, and social gatherings happening in and around Rajshahi.</p>
+        </section>
+
+        <section id="festivals" class="community-category">
+            <h3><i class="fas fa-calendar-alt"></i> Festivals & Celebrations</h3>
+            <p>Annual and seasonal festivals that bring the community together.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Pohela Boishakh (Bengali New Year)</h4>
+                    <p><i class="fas fa-info-circle"></i> Date: April 14th (approx), nationwide celebration.</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Celebrations at Padma Garden, university campuses.</p>
+                </div>
+                <div class="contact-card">
+                    <h4>Mango Festival</h4>
+                    <p><i class="fas fa-info-circle"></i> Date: May-July (mango season)</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Various locations, celebrating Rajshahi's famous mangoes.</p>
+                </div>
+                <div class="contact-card">
+                    <h4>Eid-ul-Fitr & Eid-ul-Adha</h4>
+                    <p><i class="fas fa-info-circle"></i> Religious festivals with communal prayers and celebrations.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cultural-programs" class="community-category">
+            <h3><i class="fas fa-theater-masks"></i> Cultural Programs & Arts</h3>
+            <p>Information on performing arts, music, and local cultural events.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Shilpakala Academy, Rajshahi</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Talaimari, Rajshahi</p>
+                    <p><i class="fas fa-info-circle"></i> Hosts various cultural performances, workshops.</p>
+                </div>
+                <div class="contact-card">
+                    <h4>University of Rajshahi Cultural Programs</h4>
+                    <p><i class="fas fa-info-circle"></i> Regular events including drama, music, dance performances.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="public-meetings" class="community-category">
+            <h3><i class="fas fa-users"></i> Public Meetings & Workshops</h3>
+            <p>Stay updated on important public gatherings and workshops.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>City Corporation Public Hearings</h4>
+                    <p><i class="fas fa-info-circle"></i> Check RCC website or local newspapers for schedules.</p>
+                </div>
+                <div class="contact-card">
+                    <h4>NGO & Community Workshops</h4>
+                    <p><i class="fas fa-info-circle"></i> Various non-governmental organizations host workshops on social issues, health, education etc.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sports-events" class="community-category">
+            <h3><i class="fas fa-baseball-ball"></i> Sports Events</h3>
+            <p>Information on local and regional sports competitions.</p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Shaheed A.H.M. Kamaruzzaman Stadium</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Location: Rajshahi</p>
+                    <p><i class="fas fa-info-circle"></i> Main venue for cricket and football matches.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-section previous-reviews" aria-labelledby="previous-reviews-heading">
+            <h3 id="previous-reviews-heading">Visitor Feedback</h3>
+            <div id="reviews-list">
+                <p id="reviews-loading">Loading reviews...</p>
+            </div>
+        </section>
+        <section class="footer-section review" aria-labelledby="review-heading">
+            <h3 id="review-heading">Help Us Improve!</h3>
+            <form class="review-form" onsubmit="event.preventDefault(); submitReview();">
+                 <p>Share your experience or suggestions to help make OUR RAJSHAHI even better.</p>
+                 <div class="star-rating" data-tooltip="Rate your overall experience" role="radiogroup" aria-labelledby="rating-label">
+                     <span id="rating-label" class="sr-only">Rate your experience:</span>
+                     <i class="fas fa-star" data-value="1" role="radio" aria-checked="false" aria-label="Rate 1 star" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="2" role="radio" aria-checked="false" aria-label="Rate 2 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="3" role="radio" aria-checked="false" aria-label="Rate 3 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="4" role="radio" aria-checked="false" aria-label="Rate 4 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="5" role="radio" aria-checked="false" aria-label="Rate 5 stars" tabindex="0"></i>
+                 </div>
+                 <label for="review-email" class="sr-only">Your Email Address (Required)</label>
+                 <input type="email" id="review-email" placeholder="Your email address" required>
+                 <label for="review-text" class="sr-only">Your Feedback (Required)</label>
+                 <textarea id="review-text" placeholder="Your feedback matters..." required></textarea>
+                 <label for="review-image" class="sr-only">Attach Image (Optional)</label>
+                 <input type="file" id="review-image" accept="image/jpeg,image/png,image/gif" onchange="previewImage(event)" style="display:none;">
+                 <button type="button" class="custom-file-button button-base" style="background-color: rgba(255,255,255,0.2); color: #e2e8f0; margin-bottom: 1.2rem;" onclick="document.getElementById('review-image').click()">
+                     <i class="fas fa-paperclip"></i> Attach Image
+                 </button>
+                 <img id="image-preview" alt="Image Preview" style="display: none;">
+                 <button type="submit" class="button-base button-secondary" aria-label="Submit Your Feedback">Submit Feedback</button>
+                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                 <p class="note">Login and a valid email are required to submit feedback. Image is optional (Max 5MB JPG, PNG, GIF). View feedback below.</p>
+            </form>
+        </section>
+
+        <section class="footer-section contact-info" aria-labelledby="contact-heading">
+            <h3 id="contact-heading">Contact Us</h3>
+            <p><i class="fas fa-phone-alt"></i> Phone:
+                <a href="tel:+8801740116715" data-tooltip="Call Us Now">+880 1740 116715</a> /
+                <a href="tel:+8801613000855" data-tooltip="Call Us Now">+880 1613 000855</a>
+            </p>
+            <p><i class="fas fa-envelope"></i> Email:
+                <a href="mailto:raselmahmud6757@gmail.com" data-tooltip="Send Us an Email">raselmahmud6757@gmail.com</a>
+            </p>
+            <div class="social-icons" aria-label="Social Media Links">
+                 <a href="https://www.facebook.com/rashel0855" aria-label="Facebook"><img src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/@raselmahmud4761" aria-label="Youtube"><img src="https://img.freepik.com/premium-photo/red-play-icon-button-white-background-social-media-sign-concept-3d-illustration-rendering_10307-1586.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Youtube"></a>
+                        <a href="https://x.com/rashelmahmud855" aria-label="Twitter"><img src="https://img.freepik.com/premium-photo/x-app-isolated-icon-white-color-background-3d-rendering_154993-2023.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/rashel0855/" aria-label="Instagram"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/rashel-mahmud-rabbi-94174333b/" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+            </div>
+        </section>
+
+        <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+            <h3 id="newsletter-heading">Stay Updated</h3>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); subscribeNewsletter();">
+                <p>Subscribe to get the latest news, events, and updates from Rajshahi directly to your inbox.</p>
+                <label for="newsletter-email" class="sr-only">Your Email Address</label>
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit" class="button-base button-secondary" aria-label="Subscribe to Newsletter">Subscribe</button>
+            </form>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

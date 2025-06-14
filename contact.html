@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OUR RAJSHAHI - Contact Us</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="preloader">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="Loading OUR RAJSHAHI">
+    </div>
+
+    <header>
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/city.png" alt="OUR RAJSHAHI Logo">
+        <h1>OUR RAJSHAHI</h1>
+        <div class="search-bar">
+            <input type="text" id="header-search-input" placeholder="Search Rajshahi..." aria-label="Search Rajshahi">
+            <button type="button" aria-label="Perform Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" class="button-base button-secondary" data-tooltip="Login to your account">Login</a>
+            <a href="signup.html" class="button-base button-secondary" data-tooltip="Create a new account">Signup</a>
+        </div>
+        <div class="profile-icon button-base button-secondary" onclick="toggleProfileDropdown()" data-tooltip="Account Options" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user-circle"></i>
+            <span id="username-display"></span> <div class="profile-dropdown">
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle Navigation Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <div class="nav-menu">
+            <a href="index.html" data-tooltip="Go to Home" class="home-link">Home</a>
+            <a href="emergency.html" data-tooltip="Emergency Contacts">Emergency</a>
+            <a href="government.html" data-tooltip="Government Services">Govt Offices</a>
+            <a href="transport.html" data-tooltip="Transportation Info">Transport</a>
+            <a href="business.html" data-tooltip="Local Shops & Markets">Businesses</a>
+            <a href="tourist.html" data-tooltip="Places to Visit">Attractions</a>
+            <a href="education.html" data-tooltip="Schools & Colleges">Education</a>
+            <a href="community.html" data-tooltip="Local Events">Community</a>
+            <a href="about.html" data-tooltip="About This Site">About Us</a>
+            <a href="contact.html" data-tooltip="Contact Us" class="active">Contact Us</a>
+        </div>
+    </nav>
+
+    <main class="container contact-page-content" id="container">
+        <section class="contact-hero-section">
+            <div class="contact-hero-content">
+                <h2>Get in Touch with OUR RAJSHAHI</h2>
+                <p>We're here to assist you with any questions or feedback. Feel free to reach out through our contact details or connect with us on social media.</p>
+            </div>
+        </section>
+
+        <section class="contact-category" aria-labelledby="contact-heading">
+            <h3 id="contact-heading"><i class="fas fa-headset"></i> General Inquiries</h3>
+            <p>For general questions about Rajshahi or our services, please use the following contact information:</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4><i class="fas fa-phone-alt"></i> Phone Numbers</h4>
+                    <p><a href="tel:+8801740116715">+880 1740 116715</a></p>
+                    <p><a href="tel:+8801613000855">+880 1613 000855</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4><i class="fas fa-envelope"></i> Email Address</h4>
+                    <p><a href="mailto:raselmahmud6757@gmail.com">raselmahmud6757@gmail.com</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4><i class="fas fa-share-alt"></i> Social Media</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/rashel0855" aria-label="Facebook"><img src="https://static.vecteezy.com/system/resources/previews/018/930/698/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="Facebook"></a>
+                        <a href="https://www.youtube.com/@raselmahmud4761" aria-label="Youtube"><img src="https://img.freepik.com/premium-photo/red-play-icon-button-white-background-social-media-sign-concept-3d-illustration-rendering_10307-1586.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Youtube"></a>
+                        <a href="https://x.com/rashelmahmud855" aria-label="Twitter"><img src="https://img.freepik.com/premium-photo/x-app-isolated-icon-white-color-background-3d-rendering_154993-2023.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/rashel0855/" aria-label="Instagram"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg?ga=GA1.1.1766870609.1749881658&semt=ais_hybrid&w=740" alt="Instagram"></a>
+                        <a href="https://www.linkedin.com/in/rashel-mahmud-rabbi-94174333b/" aria-label="LinkedIn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h4><i class="fas fa-info-circle"></i> Advertising Policy</h4>
+                    <p>Interested in advertising on our platform? Learn about our policies.</p>
+                    <a href="adsense.html" class="button-base button-primary" style="margin-top: 10px;">View Policy</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section contact-category">
+            <h3><i class="fas fa-comment-dots"></i> Send Us a Message</h3>
+            <p>Have a specific question or feedback? Fill out the form below and we'll get back to you as soon as possible.</p>
+            <form class="general-contact-form" onsubmit="event.preventDefault(); submitGeneralContactForm();">
+                <div class="form-group">
+                    <input type="text" id="contact-name" placeholder=" " required>
+                    <label for="contact-name">Your Name</label>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contact-email-form" placeholder=" " required>
+                    <label for="contact-email-form">Your Email</label>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="form-group">
+                    <textarea id="contact-message" placeholder=" " required></textarea>
+                    <label for="contact-message">Your Message</label>
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <button type="submit" class="button-base button-secondary">Send Message</button>
+                <div id="contact-form-message" class="info-message" style="display:none; margin-top: 15px;"></div>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-section previous-reviews" aria-labelledby="previous-reviews-heading">
+            <h3 id="previous-reviews-heading">Visitor Feedback</h3>
+            <div id="reviews-list">
+                <p id="reviews-loading">Loading reviews...</p>
+            </div>
+        </section>
+        <section class="footer-section review" aria-labelledby="review-heading">
+            <h3 id="review-heading">Help Us Improve!</h3>
+            <form class="review-form" onsubmit="event.preventDefault(); submitReview();">
+                 <p>Share your experience or suggestions to help make OUR RAJSHAHI even better.</p>
+                 <div class="star-rating" data-tooltip="Rate your overall experience" role="radiogroup" aria-labelledby="rating-label">
+                     <span id="rating-label" class="sr-only">Rate your experience:</span>
+                     <i class="fas fa-star" data-value="1" role="radio" aria-checked="false" aria-label="Rate 1 star" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="2" role="radio" aria-checked="false" aria-label="Rate 2 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="3" role="radio" aria-checked="false" aria-label="Rate 3 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="4" role="radio" aria-checked="false" aria-label="Rate 4 stars" tabindex="0"></i>
+                    <i class="fas fa-star" data-value="5" role="radio" aria-checked="false" aria-label="Rate 5 stars" tabindex="0"></i>
+                 </div>
+                 <label for="review-email" class="sr-only">Your Email Address (Required)</label>
+                 <input type="email" id="review-email" placeholder="Your email address" required>
+                 <label for="review-text" class="sr-only">Your Feedback (Required)</label>
+                 <textarea id="review-text" placeholder="Your feedback matters..." required></textarea>
+                 <label for="review-image" class="sr-only">Attach Image (Optional)</label>
+                 <input type="file" id="review-image" accept="image/jpeg,image/png,image/gif" onchange="previewImage(event)" style="display:none;">
+                 <button type="button" class="custom-file-button button-base" style="background-color: rgba(255,255,255,0.2); color: #e2e8f0; margin-bottom: 1.2rem;" onclick="document.getElementById('review-image').click()">
+                     <i class="fas fa-paperclip"></i> Attach Image
+                 </button>
+                 <img id="image-preview" alt="Image Preview" style="display: none;">
+                 <button type="submit" class="button-base button-secondary" aria-label="Submit Your Feedback">Submit Feedback</button>
+                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                 <p class="note">Login and a valid email are required to submit feedback. Image is optional (Max 5MB JPG, PNG, GIF). View feedback below.</p>
+            </form>
+        </section>
+
+        <section class="footer-section newsletter" aria-labelledby="newsletter-heading">
+            <h3 id="newsletter-heading">Stay Updated</h3>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); subscribeNewsletter();">
+                <p>Subscribe to get the latest news, events, and updates from Rajshahi directly to your inbox.</p>
+                <label for="newsletter-email" class="sr-only">Your Email Address</label>
+                <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+                <button type="submit" class="button-base button-secondary" aria-label="Subscribe to Newsletter">Subscribe</button>
+            </form>
+        </section>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Placeholder for the optional contact form submission
+        function submitGeneralContactForm() {
+            const name = document.getElementById('contact-name').value.trim();
+            const email = document.getElementById('contact-email-form').value.trim();
+            const message = document.getElementById('contact-message').value.trim();
+            const formMessage = document.getElementById('contact-form-message');
+
+            if (!name || !email || !message) {
+                formMessage.textContent = 'Please fill in all fields.';
+                formMessage.style.display = 'block';
+                formMessage.style.backgroundColor = '#ffe6e6'; // Light red for error
+                formMessage.style.color = '#cc0000'; // Dark red for error
+                return;
+            }
+
+            if (!/\S+@\S+\.\S+/.test(email)) {
+                formMessage.textContent = 'Please enter a valid email address.';
+                formMessage.style.display = 'block';
+                formMessage.style.backgroundColor = '#ffe6e6';
+                formMessage.style.color = '#cc0000';
+                return;
+            }
+
+            // Simulate sending data
+            console.log('Contact form submitted:', { name, email, message });
+            formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+            formMessage.style.display = 'block';
+            formMessage.style.backgroundColor = '#e6ffe6'; // Light green for success
+            formMessage.style.color = '#006600'; // Dark green for success
+
+            // Clear the form
+            document.querySelector('.general-contact-form').reset();
+
+            // Hide message after a few seconds
+            setTimeout(() => {
+                formMessage.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
